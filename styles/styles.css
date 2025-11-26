@@ -11,7 +11,6 @@ header {
     padding: 1em;
 }
 
-/* Imagen principal centrada */
 .hero-image {
     display: block;
     margin: 1.5em auto;
@@ -27,8 +26,17 @@ header {
 }
 
 .logo {
-    font-size: 1.5em;
+    font-size: 1.4em;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+
+.logo-img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
 }
 
 .nav-links {
