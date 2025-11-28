@@ -95,7 +95,7 @@ function initChat() {
     document.addEventListener('click', (e) => {
         const isOpen = toggle.getAttribute('aria-expanded') === 'true';
         if (!isOpen) return;
-        if (windowEl.contains(e.target) || e.target === toggle) return;
+        if (windowEl.contains(e.target) || toggle.contains(e.target)) return;
         closeChat();
     });
 
