@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Frutería Ortiz</title>
+    <link rel="stylesheet" href="../styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+                <div class="logo"><img src="../img/logo-fruteria2.png" alt="Logo Frutería Ortiz" class="logo-img"><span>Frutería Ortiz</span></div>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙 Oscuro</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                <li><a href="mision.html">Misión</a></li>
+                <li><a href="vision.html">Visión</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html" class="active">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h1>Contáctame</h1>
+            <p><strong>Guillermo David Ortiz</strong></p>
+            <p>Teléfono: 33 13 08 20 25</p>
+            <p>Horario: Lunes a Domingo de 4:00 a 15:00</p>
+            <form id="form-contacto" novalidate>
+                <div class="form-group">
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Tu nombre" />
+                    <span class="error" data-error-for="nombre"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="tu@correo.com" />
+                    <span class="error" data-error-for="email"></span>
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje"></textarea>
+                    <span class="error" data-error-for="mensaje"></span>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar</button>
+                <p class="form-exito" hidden>¡Gracias! Tu mensaje fue enviado (simulado).</p>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="social-bar">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="social-link"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="social-link"><i
+                    class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/5213313082025" target="_blank" aria-label="WhatsApp" class="social-link"><i
+                    class="fab fa-whatsapp"></i></a>
+        </div>
+        <p>&copy; 2025 Frutería Ortiz</p>
+    </footer>
+    <div id="chat-widget" class="chat-widget" aria-live="polite">
+        <button id="chat-toggle" class="chat-toggle" aria-expanded="false"><i class="fa fa-comments"></i></button>
+        <div class="chat-window" hidden>
+            <div class="chat-header">Chat Frutería <button class="chat-close" id="chat-close"
+                    aria-label="Cerrar">×</button></div>
+            <div class="chat-messages" id="chat-messages" role="log"></div>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="chat-input" placeholder="Escribe tu mensaje" aria-label="Mensaje" required />
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+
+</html>
