@@ -20,6 +20,105 @@
             <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙 Oscuro</button>
             <ul class="nav-links" id="nav-links">
                 <li><a href="index.html">Inicio</a></li>
+                <li><a href="quienes-somos.html">¿Quiénes Somos?</a></li>
+                <li><a href="mision.html">Misión</a></li>
+                <li><a href="vision.html">Visión</a></li>
+                <li><a href="politicas.html">Políticas</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="faq.html">FAQ</a></li>
+                <li><a href="ubicacion.html">Ubicación</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio">
+            <h1>Bienvenidos a Frutería Ortiz</h1>
+            <p>Frutas frescas de temporada directo del campo a tu mesa.</p>
+            <p>Comercializamos frutas frescas seleccionadas directamente de productores locales y regionales.
+                Disponibles por kilo (menudeo) o en cajas (mayoreo), con opciones de entrega a domicilio en Guadalajara.
+            </p>
+            <img src="./img/puesto-frutas.webp" alt="Puesto de frutas frescas" class="hero-image">
+        </section>
+
+        <section class="resumen-institucional">
+            <h2>Conócenos</h2>
+            <p>Frutería familiar desde 2005. Calidad y frescura en cada pieza. Consulta más en <a
+                    href="quienes-somos.html">¿Quiénes Somos?</a>, <a href="mision.html">Misión</a>, <a
+                    href="vision.html">Visión</a> y <a href="politicas.html">Políticas</a>.</p>
+        </section>
+
+        <section id="servicios">
+            <h2>Servicios</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <img src="./img/mayoreo.jpg" alt="Venta por mayoreo y menudeo">
+                    <h3>Mayoreo y Menudeo</h3>
+                    <p>Compra flexible por kilo o caja según tu necesidad.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./img/domicilio.png" alt="Entregas a domicilio">
+                    <h3>Entregas a Domicilio</h3>
+                    <p>Reparto programado en Guadalajara para pedidos frescos.</p>
+                </div>
+                <div class="service-card">
+                    <img src="./img/restaurantes.jpg" alt="Atención a restaurantes y negocios">
+                    <h3>Restaurantes y Negocios</h3>
+                    <p>Surtido confiable y personalizado para tu operación diaria.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-bar">
+            <a href="https://www.facebook.com" target="_blank" aria-label="Facebook" class="social-link"><i
+                    class="fab fa-facebook"></i></a>
+            <a href="https://www.instagram.com" target="_blank" aria-label="Instagram" class="social-link"><i
+                    class="fab fa-instagram"></i></a>
+        </div>
+        <p>&copy; 2025 Frutería Ortiz - Todos los derechos reservados</p>
+    </footer>
+
+    <div id="chat-widget" class="chat-widget" aria-live="polite">
+        <button id="chat-toggle" class="chat-toggle" aria-expanded="false"><i class="fa fa-comments"></i></button>
+        <div class="chat-window" hidden>
+            <div class="chat-header">Chat Frutería <button class="chat-close" id="chat-close"
+                    aria-label="Cerrar">×</button></div>
+            <div class="chat-messages" id="chat-messages" role="log"></div>
+            <form id="chat-form" class="chat-form">
+                <input type="text" id="chat-input" placeholder="Escribe tu mensaje" aria-label="Mensaje" required />
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html><!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutería Ortiz</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-4oVq6YH3eJkW6hw1rQ5l2JmKqS7w6UoVb5O9l5T3XWbwFhC1YurB1k0LJvG8QX6tXudw2eYzFf9H1N0Pp0hHtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo"><img src="./img/logo-fruteria2.png" alt="Logo Frutería Ortiz"
+                    class="logo-img"><span>Frutería Ortiz</span></div>
+            <button class="hamburger" id="hamburger">&#9776;</button>
+            <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar a modo oscuro">🌙 Oscuro</button>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
                 <li><a href="templates/quienes-somos.html">¿Quiénes Somos?</a></li>
                 <li><a href="templates/mision.html">Misión</a></li>
                 <li><a href="templates/vision.html">Visión</a></li>
